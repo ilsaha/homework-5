@@ -13,6 +13,7 @@
 		510617B1237FF21400AAB359 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510617AF237FF21400AAB359 /* Main.storyboard */; };
 		510617B3237FF21800AAB359 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 510617B2237FF21800AAB359 /* Assets.xcassets */; };
 		510617B6237FF21800AAB359 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510617B4237FF21800AAB359 /* LaunchScreen.storyboard */; };
+		510617C02381F72200AAB359 /* BackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510617BF2381F72200AAB359 /* BackgroundViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		510617B2237FF21800AAB359 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		510617B5237FF21800AAB359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		510617B7237FF21800AAB359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		510617BF2381F72200AAB359 /* BackgroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				510617A9237FF21400AAB359 /* AppDelegate.swift */,
 				510617AB237FF21400AAB359 /* SceneDelegate.swift */,
 				510617AD237FF21400AAB359 /* ViewController.swift */,
+				510617BF2381F72200AAB359 /* BackgroundViewController.swift */,
 				510617AF237FF21400AAB359 /* Main.storyboard */,
 				510617B2237FF21800AAB359 /* Assets.xcassets */,
 				510617B4237FF21800AAB359 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510617C02381F72200AAB359 /* BackgroundViewController.swift in Sources */,
 				510617AE237FF21400AAB359 /* ViewController.swift in Sources */,
 				510617AA237FF21400AAB359 /* AppDelegate.swift in Sources */,
 				510617AC237FF21400AAB359 /* SceneDelegate.swift in Sources */,
@@ -285,6 +289,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TCAS8A4R52;
 				INFOPLIST_FILE = "homework-5/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TCAS8A4R52;
 				INFOPLIST_FILE = "homework-5/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
