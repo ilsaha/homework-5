@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,14 +10,13 @@
         <!--MainViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController title="MainViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="homework_5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="BJj-34-0vr">
-                                <rect key="frame" x="-11" y="0.0" width="426" height="1081"/>
+                                <rect key="frame" x="-11" y="0.0" width="439" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="yDX-qb-YS9">
@@ -130,6 +129,14 @@
                                         <rect key="frame" x="249" y="507" width="157" height="108"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xJ-FC-bVI">
+                                        <rect key="frame" x="136" y="623" width="167" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Move to the next Screen"/>
+                                        <connections>
+                                            <segue destination="ecb-fR-GWo" kind="show" id="8bc-Ka-YcP"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="K2V-BK-9EB"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="YQk-E7-1zy"/>
@@ -153,27 +160,41 @@
                         <outlet property="textFieldLabel" destination="lZC-Jb-14E" id="x2s-0c-IM4"/>
                         <outlet property="textFieldOutlet" destination="0Hl-Hv-quZ" id="Es3-o1-e48"/>
                         <outlet property="valueToChange" destination="NiF-GN-wVI" id="D8D-2H-4uI"/>
-                        <segue destination="t0l-RI-X8e" kind="show" id="g3y-sd-5oe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
+        </scene>
+        <!--Slider View Controller-->
+        <scene sceneID="WzE-C1-EmY">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7vg-Mv-rlu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController wantsFullScreenLayout="YES" id="ecb-fR-GWo" customClass="SliderViewController" customModule="homework_5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iyi-9D-Uaq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iqf-94-nU5">
+                                <rect key="frame" x="98" y="437" width="179" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="touchedDown:" destination="ecb-fR-GWo" eventType="touchDown" id="Rey-Xo-NKZ"/>
+                                    <action selector="touchedOutside:" destination="ecb-fR-GWo" eventType="touchUpOutside" id="eU7-I1-Kke"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Fxm-Su-1Fu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9fS-cP-cFn"/>
+                    <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="awesomeButton" destination="Iqf-94-nU5" id="aQ2-nX-SxP"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="158" y="98"/>
-        </scene>
-        <!--BackgroundChangeController-->
-        <scene sceneID="iCx-eT-1bW">
-            <objects>
-                <viewController title="BackgroundChangeController" id="t0l-RI-X8e" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Xkt-gI-czY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="Fyv-QV-dnO"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="mBA-D1-fWa"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cJd-al-C3w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="912" y="98"/>
+            <point key="canvasLocation" x="1008.6956521739131" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>

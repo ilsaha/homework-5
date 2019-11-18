@@ -9,9 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    var backgroundSlider: UISlider?
-    var backgroundView: UIView?
     
     @IBOutlet weak var valueToChange: UILabel!;
     @IBOutlet weak var segmentOutletLabel: UILabel!
